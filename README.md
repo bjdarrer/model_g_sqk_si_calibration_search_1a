@@ -34,9 +34,9 @@ book simulation is reproduced here term-for-term. The safest use is either:
   
   (b) transplant the measurement / calibration / scoring functions into your
   
-      existing solver (e.g. your proton batch-search code), which is probably
+existing solver (e.g. your proton batch-search code), which is probably
       
-      the best path for your current workflow.
+the best path for your current workflow.
 
 Outputs
 
