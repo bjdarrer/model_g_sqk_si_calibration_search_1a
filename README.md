@@ -58,6 +58,7 @@ python3 model_g_sqk_si_calibration_search_1a.py --particle proton --ntrials 40
 python3 model_g_sqk_si_calibration_search_1a.py --particle electron --ntrials 60
 
 .............................
+
 Brendan: Solomon one of our scientists in the Starburst Foundation, after I published the above on
 
 researchgate, wrote to me saying: "Use particle Compton wavelength, charge of a single particle etc. 
