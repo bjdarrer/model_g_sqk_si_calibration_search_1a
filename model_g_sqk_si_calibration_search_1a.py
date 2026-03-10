@@ -69,17 +69,20 @@ Yes — I worked out a practical search/calibration simulation for that workflow
 
 The key idea is to treat this as an inverse-calibration problem:
 
-search for a stable particle-like Model G solution near LaViolette’s marginal-stability regime, using the book’s constraints 
+search for a stable particle-like Model G solution near LaViolette’s marginal-stability regime, using the 
+book’s constraints 
 
-G0 > Gc and (G0−Gc)/G0 ≪ 1, with chapter-12-like baseline parameters as the starting point, measure the emergent Turing
-wavelength λ0 in simulation units and map it to the target particle’s Compton wavelength in SI, since LaViolette explicitly 
-identifies the particle Turing wavelength with the Compton wavelength, estimate a charge-like source from the local Y-source 
-imbalance in the core and an active-mass-like source from the G-production imbalance, then calibrate those against the elementary 
-charge and Brown/LaViolette’s electrogravitic coupling ratio M/Q.
+G0 > Gc and (G0−Gc)/G0 ≪ 1, with chapter-12-like baseline parameters as the starting point, measure the 
+emergent Turing wavelength λ0 in simulation units and map it to the target particle’s Compton wavelength 
+in SI, since LaViolette explicitly identifies the particle Turing wavelength with the Compton wavelength, 
+estimate a charge-like source from the local Y-source imbalance in the core and an active-mass-like source 
+from the G-production imbalance, then calibrate those against the elementary charge and Brown/LaViolette’s 
+electrogravitic coupling ratio M/Q.
 
-I also built it with the important limitation in mind: the book says a stable charged-particle branch has not yet been cleanly found 
-in published Model G simulations, and that finding such a solution is “like trying to find a needle in a haystack.” So this script 
-is best thought of as a search harness plus SI calibration layer, not a claim that the full charged-particle problem is already solved.
+I also built it with the important limitation in mind: the book says a stable charged-particle branch has 
+not yet been cleanly found in published Model G simulations, and that finding such a solution is “like 
+trying to find a needle in a haystack.” So this script is best thought of as a search harness plus SI 
+calibration layer, not a claim that the full charged-particle problem is already solved.
 
 Download the script
 
@@ -91,7 +94,9 @@ It starts from a chapter-12-style baseline close to the one described in the boo
 
 A=14, B=29, Dg=1, Dx=1, Dy=12, forward ki=1 except k5=0.9, reverse k−2=0.1, 
 
-and vacuum-style outer boundary conditions — then randomly perturbs around that neighbourhood while scoring candidates for stability, outer-boundary relaxation, near-threshold behaviour, measured λ0, core size, charge-sign consistency, and Brown-ratio consistency.
+and vacuum-style outer boundary conditions — then randomly perturbs around that neighbourhood while 
+scoring candidates for stability, outer-boundary relaxation, near-threshold behaviour, measured λ0, 
+core size, charge-sign consistency, and Brown-ratio consistency.
 
 Outputs
 
@@ -113,11 +118,15 @@ python3 model_g_sqk_si_calibration_search_1a.py --particle electron --ntrials 60
 
 Important note
 
-The solver inside this file is a reference Model G-like 1D spherical solver so the whole search/calibration workflow is concrete 
-and runnable. The safest research use, though, is probably to transplant the measurement, SI calibration, and scoring parts into 
-your existing model_g_particle_1d_proton_batch_search_1b.py pipeline, since that is already part of your working search environment.
+The solver inside this file is a reference Model G-like 1D spherical solver so the whole 
+search/calibration workflow is concrete and runnable. The safest research use, though, is probably 
+to transplant the measurement, SI calibration, and scoring parts into your existing 
+model_g_particle_1d_proton_batch_search_1b.py pipeline, since that is already part of 
+your working search environment.
 
-The next step could be to splice these calibration routines directly into your current batch-search code so it scores candidates not only against James Kelly-style profiles, but also against λC, e, and Brown/LaViolette active-mass coupling.
+The next step could be to splice these calibration routines directly into your current batch-search 
+code so it scores candidates not only against James Kelly-style profiles, but also against λC, e, 
+and Brown/LaViolette active-mass coupling.
 =========================================
 
 """
