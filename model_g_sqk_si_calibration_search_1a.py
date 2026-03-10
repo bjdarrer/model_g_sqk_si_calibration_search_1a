@@ -48,7 +48,19 @@ python3 model_g_sqk_si_calibration_search_1a.py --particle proton --ntrials 40
 python3 model_g_sqk_si_calibration_search_1a.py --particle electron --ntrials 60
 
 =========================================
-Brendan: Solomon one of our scientists in the Starburst Foundation, after I published the above on researchgate, wrote to me saying: "Use particle Compton wavelength, charge of a single particle etc. In SI units to try to calibrate SQK constants, along with Paul’s boundary conditions for the relative steady state concentrations of each etheron type, that are necessary for stable particles and the relative concentrations, learned from simulations to get stable particles". He attached "Solomon__IMG_1138.png" that relates to this and the above work we've done. Solomon also said "Use these but keep in mind they are the passive masses not Paul LaViolette’s active masses." See here: "Solomon__IMG_1139.png". Solomon: "Just get ChatGPT to do it let me know what it says" Brendan: "Cool! I am using ChatGPT code to do batch runs and compare with James Kelly's profiles as plots. But now I will try and do what you have said! See @ https://github.com/bjdarrer/model_g_particle_1d_proton_batch_search_1b ". Solomon: "Active masses can be gotten from Brown’s electrogravitic experiments as Paul LaViolette has done". Can you work out a simulation to do the above?
+Brendan: Solomon one of our scientists in the Starburst Foundation, after I published the above on 
+researchgate, wrote to me saying: "Use particle Compton wavelength, charge of a single particle etc. 
+In SI units to try to calibrate SQK constants, along with Paul’s boundary conditions for the relative 
+steady state concentrations of each etheron type, that are necessary for stable particles and the relative 
+concentrations, learned from simulations to get stable particles". He attached "Solomon__IMG_1138.png" 
+that relates to this and the above work we've done. Solomon also said "Use these but keep in mind they 
+are the passive masses not Paul LaViolette’s active masses." See here: "Solomon__IMG_1139.png". 
+Solomon: "Just get ChatGPT to do it let me know what it says" Brendan: "Cool! I am using ChatGPT code 
+to do batch runs and compare with James Kelly's profiles as plots. But now I will try and do what you 
+have said! See @ https://github.com/bjdarrer/model_g_particle_1d_proton_batch_search_1b ". Solomon: 
+"Active masses can be gotten from Brown’s electrogravitic experiments as Paul LaViolette has done". 
+Can you work out a simulation to do the above?
+
 Thought for 13m 57s
 
 ChatGPT 5.4 (extended thinking):
